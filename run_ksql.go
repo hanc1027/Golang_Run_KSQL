@@ -12,7 +12,7 @@ import (
 )
  
 func getSQLStatement() {
-	file, err := os.Open("test.sql")
+	file, err := os.Open("example.sql")
  
 	if err != nil {
 		log.Fatalf("failed opening file: %s", err)

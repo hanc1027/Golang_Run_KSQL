@@ -1,20 +1,10 @@
 ## Golang_Run_ksql
 
 ### 需在go環境下執行
-### setup
-1) 請至[Golang官網](https://golang.org/dl/)下載對應的OS版本
-2) 設定環境變數
-    1) 將/usr/local/go/bin加入PATH環境變數，將以下的設定寫入*.bashrc*。  
-    若有使用iTerm2，則寫入*.zshrc*
-
-        ```shell
-            export GOPATH=$HOME/go
-            export PATH=$HOME/bin:$GOPATH/bin:$PATH
-        ```
-
-    2) 執行 `$ source .bashrc` => 讓設定值重新跑
-
-    3) 可再執行`$ echo $PATH` => 檢查環境變數是否有設定成功
-3) 下載、安裝完成後，於Mac或Linux系統中，找到 **/Users/[您的使用者名稱]/go/** 的路徑。  
-Windows系統，應可在**C:/go**下找到。
-4) 將此專案移至`/Users/[您的使用者名稱]/go/src`的資料下，再執行`$ go run .`，即可啟動KSQL Statement。
+- 若沒有Golang環境，請依照[官方](https://golang.org/dl/)安裝、配置
+    - Windows:若golang無法在git bash軟體上使用的話，請轉用「cmd」軟體執行專案
+- 請確保此專案已放置於
+    - Linux/MacOS:`$GOPATH/src/`下
+        - $GOPATH 應為  **/Users/[您的使用者名稱]/**
+    - Windows:`%GOPATH%/src/`下(若沒有此路徑，請自行新增資料夾)
+        - %GOPATH% 應為 **C:**w
